@@ -1,0 +1,10 @@
+x = 0
+r = b - Ax
+p = r
+for i = 0 to n
+	a = (t(r) * r) / (t(p) * A * p)
+	x = x + a * p
+	r1 = r - a * A * p
+	b = (t(r1) * r1) / (t(r) * r)
+	p = r + b * p
+	r = r1
